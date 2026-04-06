@@ -6,7 +6,7 @@
 [![Website](https://img.shields.io/badge/Website-Project%20page-24292f?style=flat-square&logo=github&logoColor=white)](https://sijie-yang.github.io/Reasoning4UP/)
 [![Urban Analytics Lab](https://img.shields.io/badge/Lab-Urban%20Analytics%20Lab-A8D8FF?style=flat-square)](https://ual.sg/)
 
-**Authors:** [Sijie Yang](https://sijie-yang.com), [Jiatong Li](https://ual.sg/author/jiatong-li/), [Filip Biljecki](https://filipbiljecki.com) · [Urban Analytics Lab](https://ual.sg), NUS · [Repository](https://github.com/Sijie-Yang/Reasoning4UP)
+**Authors:** [Sijie Yang](https://sijie-yang.com), [Jiatong Li](https://ual.sg/author/jiatong-li/), [Filip Biljecki](https://filipbiljecki.com) · [Urban Analytics Lab](https://ual.sg), NUS
 
 AI has been strong at urban **analysis** (learning from data to predict). This work argues the next step is AI-assisted **decision-making**—recommending sites, allocating resources, and weighing trade-offs with transparent reasoning about constraints and stakeholder values. Recent methods (chain-of-thought, ReAct, multi-agent collaboration) make that direction realistic.
 
