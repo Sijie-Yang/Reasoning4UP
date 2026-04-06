@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reasoning Is All You Need for Urban Planning AI</title>
+  <meta name="description" content="Agentic Urban Planning AI Framework — AAAI 2026 AI4UP Workshop position paper on reasoning-capable planning agents." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,600;0,700;1,500&family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!--
+    GitHub Pages: Repository → Settings → Pages → Build and deployment
+    → Source: Deploy from a branch → Branch: main → Folder: /docs → Save.
+    Paper button links to arXiv abstract; local copy may live in docs/ as reasoning4up_arxiv_version.pdf.
+  -->
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-logos-bar" aria-label="Affiliations">
+      <div class="wrap hero-logos-strip">
+        <p class="hero-lab-title">
+          <a href="https://ual.sg/">NUS Urban Analytics Lab</a>
+        </p>
+        <div class="hero-logos-icons">
+          <a href="https://www.nus.edu.sg/" title="National University of Singapore">
+            <img src="images/NUS_Logo_white.jpg" alt="NUS" width="120" height="40" />
+          </a>
+          <a href="https://ual.sg/" title="Urban Analytics Lab">
+            <img src="images/UAL_Logo_white.jpg" alt="Urban Analytics Lab logo" width="120" height="40" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap hero-body">
+      <p class="venue">AAAI 2026 · AI4UP Workshop · Position Paper</p>
+      <h1>Reasoning Is All You Need for Urban Planning AI</h1>
+      <p class="authors">
+        <a href="https://sijie-yang.com">Sijie Yang</a><sup>1</sup>,
+        <a href="https://ual.sg/author/jiatong-li/">Jiatong Li</a><sup>1,2</sup>,
+        <a href="https://filipbiljecki.com">Filip Biljecki</a><sup>1,3,*</sup>
+      </p>
+      <div class="affiliations">
+        <p>
+          <sup>1</sup>Department of Architecture, National University of Singapore<br />
+          <sup>2</sup>School of Architecture, Tsinghua University<br />
+          <sup>3</sup>Department of Real Estate, National University of Singapore
+        </p>
+        <p class="corresponding"><sup>*</sup>Corresponding author: <a href="mailto:filip@nus.edu.sg">filip@nus.edu.sg</a></p>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://arxiv.org/abs/2511.05375" target="_blank" rel="noopener noreferrer">Paper</a>
+        <a class="btn primary" href="poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+        <a class="btn" href="https://github.com/Sijie-Yang/Reasoning4UP">Repository</a>
+        <a class="btn" href="#abstract">Abstract</a>
+        <a class="btn" href="#figures">Figures</a>
+        <a class="btn" href="#cite">Citation</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="poster" aria-label="Poster">
+      <div class="wrap-wide">
+        <div class="wrap">
+          <div class="figure-block">
+            <figure>
+              <img src="images/poster_landscape.png" alt="Visual summary: reasoning for urban planning AI" width="2400" height="1698" loading="eager" />
+              <figcaption>
+                Presented at
+                <a href="https://ai-for-urban-planning.github.io/AAAI26-workshop/">The 2nd Workshop on AI for Urban Planning</a>
+                (AI4UP 2026), held in conjunction with AAAI 2026.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="abstract" class="abstract">
+      <div class="wrap">
+        <h2>Abstract</h2>
+        <p>
+          AI has proven highly successful at urban planning <em>analysis</em>—learning patterns from data to predict future conditions. The next frontier is AI-assisted <em>decision-making</em>: agents that recommend sites, allocate resources, and evaluate trade-offs while reasoning transparently about constraints and stakeholder values. Recent breakthroughs in reasoning AI—chain-of-thought prompting, ReAct, and multi-agent collaboration frameworks—now make this vision achievable.
+        </p>
+        <p>
+          This position paper presents the <strong>Agentic Urban Planning AI Framework</strong> for reasoning-capable planning agents that integrates three cognitive layers (Perception, Foundation, Reasoning) with six logic components (Analysis, Generation, Verification, Evaluation, Collaboration, Decision) through a multi-agents collaboration framework. We demonstrate why planning decisions require explicit reasoning capabilities that are value-based (applying normative principles), rule-grounded (guaranteeing constraint satisfaction), and explainable (generating transparent justifications)—requirements that statistical learning alone cannot fulfill. We compare reasoning agents with statistical learning, present a comprehensive architecture with benchmark evaluation metrics, and outline critical research challenges. This framework shows how AI agents can augment human planners by systematically exploring solution spaces, verifying regulatory compliance, and deliberating over trade-offs transparently—not replacing human judgment but amplifying it with computational reasoning capabilities.
+        </p>
+        <div class="pill-row" aria-label="Keywords">
+          <span class="pill">Urban planning AI</span>
+          <span class="pill">Reasoning agents</span>
+          <span class="pill">Multi-agent systems</span>
+          <span class="pill">Human–AI collaboration</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contributions">
+      <div class="wrap">
+        <h2>Contributions</h2>
+        <ul class="contributions">
+          <li>We compare reasoning agents with statistical learning, demonstrating why explicit reasoning is foundational for planning decisions.</li>
+          <li>We present the <em>Agentic Urban Planning AI Framework</em>—a three-layer cognitive architecture (Perception, Foundation, Reasoning) integrating six logic components through a multi-agents collaboration framework, formalised with algorithms and evaluation metrics.</li>
+          <li>We outline five critical research challenges and a path forward for building reasoning-capable planning agents that augment human judgment with computational reasoning capabilities.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="figures">
+      <div class="wrap-wide">
+        <h2>Agentic Urban Planning AI Framework</h2>
+        <div class="wrap">
+          <div class="figure-block">
+            <figure>
+              <img src="images/concept_learning_to_reasoning.png" alt="Diagram contrasting analysis (prediction) and decision support with explicit reasoning in urban planning AI" width="1200" height="800" loading="lazy" />
+              <figcaption>AI’s dual role in urban planning: analysis (prediction tasks) and decision support (recommendation tasks with explicit reasoning).</figcaption>
+            </figure>
+            <div class="figure-desc">
+              <p>
+                Urban analytics has succeeded at <em>prediction</em>—learning correlations from historical data to forecast traffic, land use, emissions, and liveability. The next frontier is AI-assisted <em>decision-making</em>: siting, allocation, and trade-offs that must be transparent about constraints and values. Recent reasoning techniques (chain-of-thought, ReAct, multi-agent deliberation) make that path plausible.
+              </p>
+              <p>
+                The paper contrasts how decisions are produced. <strong>Statistical learning</strong> fits patterns from data: strong at prediction, but weak on normative principles, hard guarantees on regulations, and step-by-step justification. <strong>Reasoning agents</strong> surface explicit reasoning traces—better suited to challenging unfair historical patterns, resolving conflicting rules, and explaining “what-if” logic. Planning, the text argues, needs capabilities that are value-based, rule-grounded, and explainable, not pattern replication alone.
+              </p>
+            </div>
+          </div>
+          <div class="figure-block">
+            <figure>
+              <img src="images/concept_urban_agentic_ai_framework.png" alt="Agentic urban planning AI framework with three cognitive layers and six logic components" width="1200" height="800" loading="lazy" />
+              <figcaption>Agentic urban planning AI framework for reasoning-capable urban planning: three cognitive layers (Perception, Foundation, Reasoning) and six logic components (Analysis, Generation, Verification, Evaluation, Collaboration, Decision) with a human–AI co-planning interface.</figcaption>
+            </figure>
+            <div class="figure-desc">
+              <p>
+                The <strong>Agentic Urban Planning AI Framework</strong> stacks three cognitive layers—<strong>Perception</strong> (multi-modal urban sensing and structured representations), <strong>Foundation</strong> (predictive models, LLMs, RAG, simulation), and <strong>Reasoning</strong> (goal-directed agents that deliberate, verify, and act). The paper positions RAG as a memory interface to planning knowledge, LLMs as the core reasoning engine, and reinforcement learning as both environment modelling (foundation) and policy optimisation (reasoning).
+              </p>
+              <p>
+                Six logic components—<em>Analysis, Generation, Verification, Evaluation, Collaboration, Decision</em>—orchestrate deliberation: analyse context, generate alternatives, check compliance, score normative objectives, support stakeholders, and synthesise recommendations with trade-offs. They work iteratively with humans so planners can critique chains, reprioritise, and refine proposals—aligned with value-based, rule-grounded, explainable decision support.
+              </p>
+            </div>
+          </div>
+          <div class="figure-block">
+            <figure>
+              <img src="images/method_multi_agent_collaboration.png" alt="Multi-agent collaboration framework with human-AI interface and two collaboration methods" width="1600" height="900" loading="lazy" />
+              <figcaption>Multi-agents collaboration framework implementing the Collaboration component: linear individual review and group discussion across the six logic parts and three cognitive layers.</figcaption>
+            </figure>
+            <div class="figure-desc">
+              <p>
+                The <strong>Collaboration</strong> component is realised as a multi-agent workflow across the six logic parts and three layers. <strong>Method 1 (linear individual review)</strong> lets experts rate, comment, and request revisions in sequence—useful for specialised review or tight schedules. <strong>Method 2 (group discussion)</strong> supports joint deliberation, surfacing conflicts and trade-offs for contentious, participatory decisions.
+              </p>
+              <p>
+                Both routes share a <em>generation–verification–evaluation</em> pipeline behind a unified <strong>human–AI interface</strong>. The system proposes alternatives, checks hard constraints, and scores soft objectives; humans respond with ratings, comments, and revision requests. Analysis grounds proposals in perception and foundation data; collaboration turns stakeholder input into constraints for agents; the decision stage combines agent reasoning with human judgment via accept/revise paths so agency stays with planners.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenges">
+      <div class="wrap">
+        <h2>Research agenda (summary)</h2>
+        <p class="muted-intro" style="color: var(--muted); margin-top: 0;">Five open challenges from the paper:</p>
+        <ol class="challenges">
+          <li><strong>Constraint knowledge formalisation</strong> — encoding planning rules in machine-interpretable form while handling ambiguity and conflict.</li>
+          <li><strong>Reasoning quality and verification</strong> — ensuring reasoning chains are correct and complete when using LLMs.</li>
+          <li><strong>Scalability and efficiency</strong> — many constraints, iterative refinement, real-time interaction.</li>
+          <li><strong>Learning–reasoning integration</strong> — dividing labour between prediction and constraint-based reasoning.</li>
+          <li><strong>Fairness, equity, and value alignment</strong> — auditing biases and aligning with diverse stakeholder values.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="cite">
+      <div class="wrap">
+        <h2>Citation</h2>
+        <pre class="citation" id="bibtex">@inproceedings{yang2026reasoning4up,
+  title        = {Reasoning Is All You Need for Urban Planning {AI}},
+  author       = {Yang, Sijie and Li, Jiatong and Biljecki, Filip},
+  booktitle    = {Proceedings of the 2nd Workshop on AI for Urban Planning},
+  year         = {2026},
+  organization = {Association for the Advancement of Artificial Intelligence},
+  note         = {AI4UP @ AAAI 2026. Position paper},
+  url          = {https://ai-for-urban-planning.github.io/AAAI26-workshop/}
+}</pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="logos">
+        <a href="https://www.nus.edu.sg/" title="National University of Singapore">
+          <img src="images/NUS_Logo_white.jpg" alt="National University of Singapore" width="120" height="40" />
+        </a>
+        <a href="https://ual.sg/" title="Urban Analytics Lab">
+          <img src="images/UAL_Logo_white.jpg" alt="Urban Analytics Lab" width="120" height="40" />
+        </a>
+      </div>
+      <p>
+        Urban Analytics Lab, National University of Singapore. This page is static HTML for
+        <a href="https://pages.github.com/">GitHub Pages</a>.
+        Paper: <a href="https://arxiv.org/abs/2511.05375">arXiv:2511.05375</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
